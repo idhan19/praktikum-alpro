@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+//data anak perempan pak tono
+int main() {
+  for (int i = 0; i < 10; i++)
+  {
+    if ( i <= 5) {
+    cout << "anak ke-" << i << " perempuan" << "\n";
+    }
+    if ( i > 5 ) {
+    cout << "anak ke-" << i << " laki-laki" << "\n";
+    }
+    if (i==8) {
+    break;
+    }
+  }
+  return 0;
+}
