@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-//data anak perempan pak tono
+
+//data gender anak perempan pak tono
 int main() {
   for (int i = 0; i < 10; i++)
   {
