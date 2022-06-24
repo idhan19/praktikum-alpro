@@ -1,0 +1,26 @@
+@@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct rokok {
+string merek;
+float berat;
+int isi;
+int harga;
+};
+
+int main(){
+	rokok malboro;
+	malboro.merek = "malboro";
+	malboro.berat = 232;
+	malboro.isi = 12;
+	malboro.harga = 20000;
+	
+	cout << malboro.merek << endl;
+	cout << malboro.berat << endl;
+	cout << malboro.isi <<endl;
+	cout << malboro.harga <<endl;
+	
+	return 0;
+}
