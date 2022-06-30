@@ -55,7 +55,7 @@ int main()
   cout<<"\t\t(PESAWAT PEMBERSIH ALIEN)"<<endl;
   cout<<"\t\t "<<developer.nama<<" | "<<developer.nim<<" | "<<developer.kelas<<endl; 	
 
-  //lopping
+  //looping
   for (x=0;x<xmap;x++){
    for (y=0;y<ymap;y++){
     if (map[x][y]==1){
