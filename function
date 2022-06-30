@@ -1,0 +1,13 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+void kampus(string nama){
+	cout<< nama <<" sedang di kampus \n";
+}
+int main(){
+kampus("risyad");
+kampus("berlian");
+kampus("faza");
+return 0;
+}
