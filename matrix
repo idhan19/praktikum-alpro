@@ -4,10 +4,28 @@
 #define xmap 20
 #define ymap 20
 using namespace std;
+
+//function
+char getinput(int posisix, int posisiy){
+	cout<<"ANALOG GAME\n""\W\" = Naik\n\"A\" = belok kiri\n\"S\" = turun\n\"D\" = belok kanan\n'@,"" = SAMPAH"<<endl;
+	cout<<"SELAMAT BERMAIN";
+ 	char input=getch();
+  	return input;
+}
+//struct
+struct Developer{
+	string nama;
+	int nim;
+	string kelas;
+} developer;
 int main()
 {
+ developer.nama = "Wildan ";
+ developer.nim = 1217050141;
+ developer.kelas = "C";
  int x,y,posisix,posisiy,batas;
  char input;
+ //pointer
  char *arah[4];
  batas=0;
  *arah="G0!";
@@ -34,10 +52,10 @@ int main()
 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
        };
  while(1){
-  cout<<"(pesawat MIPA bersihin TAMAN SISKOM)";
+  cout<<"\t\t(PESAWAT PEMBERSIH ALIEN)"<<endl;
+  cout<<"\t\t "<<developer.nama<<" | "<<developer.nim<<" | "<<developer.kelas<<endl; 	
 
-
-  cout<<endl<<"   (SUPRIYADI | K12111012)\n";
+  //lopping
   for (x=0;x<xmap;x++){
    for (y=0;y<ymap;y++){
     if (map[x][y]==1){
@@ -51,7 +69,7 @@ int main()
     }
     else if (map[x][y]==2){
      cout<<*arah;
-     posisix=x;
+	 posisix=x;
      posisiy=y;
     }
     else if (map[x][y]==3){
@@ -61,9 +79,7 @@ int main()
    }
    cout<<" "<<endl;
   }
-  cout<<"\n\"w\" \"a\" \"s\" \"d\" untuk menggerakkan]  ['@, = SAMPAH]   [Caps Lock = PAUSE] ";
-  cout<<endl<<"posisi x = "<<posisix<<endl<<"posisi y = "<<posisiy;
-  input=getch();
+  input = getinput(posisix, posisiy);
   if(input=='s'){
    if (map[posisix+1][posisiy]==0 || map[posisix+1][posisiy]==3){
     map[posisix][posisiy]=0;
